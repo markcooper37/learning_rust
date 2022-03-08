@@ -1,3 +1,6 @@
+// Creating a basic number guessing game
+// using chapter 2 of 'The Rust Programming Language'
+
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;

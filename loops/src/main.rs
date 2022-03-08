@@ -1,3 +1,6 @@
+// Investigating various loop types
+// from chapter 3.5 of 'The Rust Programming Language'
+
 fn main() {
     let mut count = 0;
 
