@@ -2,6 +2,7 @@ use std::error::Error;
 use std::fs;
 use std::env;
 
+// This function finds which lines contain a particular string
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.filename)?;
 
@@ -18,6 +19,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+// We store related configuration information in a single struct
 pub struct Config {
     pub query: String,
     pub filename: String,
@@ -25,6 +27,7 @@ pub struct Config {
 }
 
 impl Config {
+    // This function creates a new configuration
     pub fn new(args: &[String]) -> Result<Config, &'static str> {
         if args.len() < 3 {
             return Err("not enough arguments");
@@ -33,12 +36,15 @@ impl Config {
         let query = args[1].clone();
         let filename = args[2].clone();
 
+        // Environment variable option is included
         let case_sensitive = env::var("CASE_INSENSITIVE").is_err();
 
         Ok(Config { query, filename, case_sensitive })
     }
 }
 
+// This function performs a case sensitive search for a string,
+// returning the lines that contain it
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     let mut results = Vec::new();
 
@@ -51,6 +57,8 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     results
 }
 
+// This function performs a case insensitive search for a string,
+// returning the lines that contain it
 pub fn search_case_insensitive<'a>(
     query: &str,
     contents: &'a str,
@@ -67,6 +75,7 @@ pub fn search_case_insensitive<'a>(
     results
 }
 
+// These tests check that the above search functions work as expected
 #[cfg(test)]
 mod tests {
     use super::*;
