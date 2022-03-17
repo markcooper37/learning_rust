@@ -1,6 +1,3 @@
-// Investigating collections
-// using chapter 8 of 'The Rust Programming Language'
-
 use std::collections::HashMap;
 
 fn main() {

@@ -1,6 +1,3 @@
-// Learning to handle errors
-// using chapter 9 of 'The Rust Programming Language'
-
 use std::fs::File;
 use std::io::ErrorKind;
 use std::io;

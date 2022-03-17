@@ -1,6 +1,3 @@
-// Investigating basic enums and pattern matching
-// using chapter 6 of 'The Rust Programming Language'
-
 fn main() {
     println!("Value of a penny: {}", value_in_cents(Coin::Penny));
     println!("Value of a nickel: {}", value_in_cents(Coin::Nickel));

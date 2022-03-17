@@ -1,6 +1,3 @@
-// Investigating ownership
-// using chapter 4 of 'The Rust Programming Language'
-
 fn main() {
     let s1 = String::from("hello");
     let s2 = s1; // s1 is invalid after this line for memory safety

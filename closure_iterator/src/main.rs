@@ -1,6 +1,3 @@
-// Learning about closures and iterators
-// using chapter 13 of 'The Rust Programming Language'
-
 use std::thread;
 use std::time::Duration;
 

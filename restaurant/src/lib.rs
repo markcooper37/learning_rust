@@ -1,6 +1,3 @@
-// Creating a basic library based on a restaurant model
-// using chapter 7 of 'The Rust Programming Language'
-
 pub use crate::front_of_house::serving;
 
 mod front_of_house;

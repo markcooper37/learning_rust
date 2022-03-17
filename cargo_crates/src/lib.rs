@@ -1,6 +1,3 @@
-// Learning about Cargo and Crates.io
-// using chapter 14 of 'The Rust Programming Language'
-
 //! # Cargo Crates
 //!
 //! `cargo_crates` is an experimental crate used for investigating

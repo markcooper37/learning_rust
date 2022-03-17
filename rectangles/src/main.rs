@@ -1,6 +1,3 @@
-// Creating a program to implement methods on rectangles
-// using chapter 5 of 'The Rust Programming Language'
-
 #[derive(Debug)]
 
 // Using a struct is more descriptive and clear,

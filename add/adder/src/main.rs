@@ -1,6 +1,3 @@
-// Creating a workspace
-// using chapter 14 of 'The Rust Programming Language'
-
 use add_one;
 use add_two;
 use rand;
