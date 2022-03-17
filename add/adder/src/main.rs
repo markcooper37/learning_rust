@@ -1,0 +1,21 @@
+// Creating a workspace
+// using chapter 14 of 'The Rust Programming Language'
+
+use add_one;
+use add_two;
+use rand;
+
+fn main() {
+    let num = 10;
+    println!(
+        "Hello, world! {} plus one is {}!",
+        num,
+        add_one::add_one(num)
+    );
+    let num = 10;
+    println!(
+        "Hello, world! {} plus two is {}!",
+        num,
+        add_two::add_two(num)
+    );
+}
